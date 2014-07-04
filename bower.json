@@ -1,0 +1,28 @@
+{
+  "name": "overflow-hidden-collapser",
+  "main": "overflow-hidden-collapser.min.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/eduardomb/overflow-hidden-collapser",
+  "authors": [
+    "Eduardo Barbosa <eduardomb@ufmg.br>"
+  ],
+  "description": "jQuery plugin to show/hide hidden items from a menu with 'overflow: hidden'",
+  "keywords": [
+    "overflow",
+    "hidden",
+    "collapser",
+    "menu",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
