@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overflow Hidden Collapser</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    #centered-page {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #menu {
+      height: 50px;
+      background: #dd4814;
+      overflow: hidden;
+    }
+
+    .hiddenMenu {
+      background: #dd4814;
+      border-top: 1px solid #ccc;
+    }
+
+    .item {
+      float: left;
+      padding: 0 20px;
+      line-height: 50px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .item:hover {
+      background: #CD3F0F;
+    }
+  </style>
+</head>
+<body>
+  <div id="centered-page">
+    <div id="menu">
+      <a href="#" class="item">Item 0</a>
+      <a href="#" class="item">Item 1</a>
+      <a href="#" class="item">Item 2</a>
+      <a href="#" class="item">Item 3</a>
+      <a href="#" class="item">Item 4</a>
+      <a href="#" class="item">Item 5</a>
+      <a href="#" class="item">Item 6</a>
+      <a href="#" class="item">Item 7</a>
+      <a href="#" class="item">Item 8</a>
+      <a href="#" class="item">Item 9</a>
+      <a href="#" class="item more">...</a>
+    </div>
+
+    <h1>Overflow hidden collapser example</h1>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="overflow-hidden-collapser.js"></script>
+  <script>
+    $('#menu').overflowHiddenCollapser({
+      moreBtSelector: '.more',
+      hiddenMenuClass: 'hiddenMenu'
+    });
+  </script>
+</body>
+</html>
